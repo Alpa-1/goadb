@@ -9,7 +9,7 @@ import (
 	"time"
 
 	adb "github.com/Alpa-1/goadb"
-	"github.com/Alpa-1/goadb/internal/errors"
+	"github.com/Alpa-1/goadb/errors"
 )
 
 var (

@@ -5,7 +5,7 @@ import (
 	"os"
 	"time"
 
-	"github.com/Alpa-1/goadb/internal/errors"
+	"github.com/Alpa-1/goadb/errors"
 	"github.com/Alpa-1/goadb/wire"
 )
 
