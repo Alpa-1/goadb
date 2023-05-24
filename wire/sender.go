@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"io"
 
-	"github.com/zach-klippenstein/goadb/internal/errors"
+	"github.com/Alpa-1/goadb/internal/errors"
 )
 
 // Sender sends messages to the server.
@@ -29,7 +29,7 @@ func SendMessageString(s Sender, msg string) error {
 }
 
 func (s *realSender) SendMessage(msg []byte) error {
-	if len(msg) > MaxPayloadSize- 4 {
+	if len(msg) > MaxPayloadSize-4 {
 		return errors.AssertionErrorf("message length exceeds maximum: %d", len(msg))
 	}
 
